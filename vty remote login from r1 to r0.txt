@@ -1,0 +1,35 @@
+
+Packet Tracer PC Command Line 1.0
+C:\>telnet 90.0.9.65
+Trying 90.0.9.65 ...Open
+
+
+User Access Verification
+
+Password: 
+Router>en
+Password: 
+Router#show run
+Building configuration...
+
+Current configuration : 1158 bytes
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+enable password 123
+!
+!
+!
+ip dhcp pool r0
+ network 90.0.9.0 255.255.255.192
+ default-router 90.0.9.62
+!
+!
+ --More-- 
